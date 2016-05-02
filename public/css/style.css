@@ -1,0 +1,165 @@
+body {
+    /*font-family: "brandon-grotesque", Helvetica,arial,sans-serif;*/
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 19px;
+    line-height: 1.6em;
+    text-transform: none;
+    text-decoration: none;
+    font-weight: 300, normal;
+    font-style: normal;
+}
+
+header {
+    height: 400px;
+    /*background-color: #3498db;*/
+}
+
+header .head-container {
+    position: relative;
+    height: 90%;
+    display: inline-block;
+    margin-left: 25%;
+    width: 50%;
+    /*border: solid red 1px;*/
+    top: 5%;
+}
+
+header .head-container .logo {
+    position: relative;
+    top: 8%;
+    width: 30%;
+    height: 70%;
+    margin-left: 35%;
+    text-align: center;
+    font-size: 50px;
+    line-height: 1.8em;
+
+    border: solid #FACD01 10px;
+}
+
+header .head-container .logo strong {
+    position: relative;
+    top: 15%;
+
+}
+
+/*header .head-container .logo #logo-desc {
+    margin-top: 10%;
+    font-size: 15px;
+    line-height: 1em;
+}*/
+
+
+header .head-container .navigation {
+    position: relative;
+    width: 100%;
+    height: 15%;
+    bottom: -13%;
+
+    /*border: solid black 1px;*/
+}
+
+header .head-container .navigation ul {
+    color: #777;
+    /*display: inline;*/
+    list-style: none;
+}
+
+header .head-container .navigation ul li {
+    display: inline;
+    padding: 0px 50px;
+}
+
+header .head-container .navigation ul li a {
+    color: #777;
+    text-decoration: none;
+    /*padding: 100px 0px;*/
+}
+
+
+.container {
+    position: relative;
+    width: 90%;
+    margin-left: 5%;
+
+    /*border: 1px solid black;*/
+}
+
+#main {
+    position: relative;
+    /*height: innerHeight;*/
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    /*border: 1px solid black;*/
+}
+
+.wrapper {
+    margin-left: 10%;
+    margin-top: 10%;
+
+    /*border: 1px solid black;*/
+}
+
+.inner-wrapper {
+    padding-left: 30px;
+    padding-bottom: 30px;
+    display: inline-block;
+}
+
+#main .project {
+    height: 222px;
+    width: 222px;
+    display: inline-block;
+    color: white;
+    /*margin-left: 5%;*/
+    /*margin-top: 10%;*/
+}
+
+.text {
+    position: relative;
+    text-align: center;
+    top: 45%;
+    left: 45%;
+}
+
+#main .project#project-1 {
+    background-color: #0F137E;
+}
+
+#main .project#project-2 {
+    background-color: #FACD01;
+    color: #0F137E;
+}
+
+#main .project#project-3 {
+    background-color: #0F137E;
+}
+
+#main .project#project-4 {
+    background-color: #FDDD51;
+    color: #0F137E;
+
+}
+
+#main .project#project-5 {
+    background-color: #0F137E;
+}
+
+#main .project#project-6 {
+    background-color: #FCDA00;
+    color: #0F137E;
+}
+
+footer {
+    height: 100px;
+/*    background-color: #2ecc71;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;*/
+}
+
+footer p {
+    position: relative;
+    top: 50%;
+}
