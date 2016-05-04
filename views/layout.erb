@@ -1,49 +1,68 @@
 <!doctype html>
 <html>
-<head>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,600' rel='stylesheet' type='text/css'>
-  <link href="/css/style.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-    <header>
-        <div class="head-container">
-            <div class="logo">
-                <strong>
-                marina<br>
-                rozova
-                </strong>
+
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
+        <header>
+
+          <div class="row" id="header-row">
+
+            <div class="col-md-3">
+            </div>
+
+            <div class="head-container col-md-6">
+              <div class="logo">
+                <strong>marina<br>rozova</strong>
                 <!-- <div id="logo-desc">
                 <strong>Full Stack Web Developer</strong>
                 </div> -->
-            </div>
+              </div>
 
-            <div class="navigation">
-                <ul>
-                    <li>
-                        <a href="#">work</a>
-                    </li>
-                    <li>
-                        <a href="#">about</a>
-                    </li>
-                    <li>
-                        <a href="#">resume</a>
-                    </li>
-                    <li>
-                        <a href="#">contact</a>
-                    </li>
+              <div class="navigation">
+                <ul class="row">
+                  <li class="col-md-3">
+                    <a href="/">work</a>
+                  </li>
+                  <li class="col-md-3">
+                    <a href="/about">about</a>
+                  </li>
+                  <li class="col-md-3">
+                    <a href="/resume">resume</a>
+                  </li>
+                  <li class="col-md-3">
+                    <a href="/contact">contact</a>
+                  </li>
                 </ul>
-            </div>
-        </div>
-    </header>
+              </div>
 
-    <div class="container">
-        <%= yield %>
-    </div>
+            </div>
+
+            <div class="col-md-3">
+            </div>
+
+          </div>
+
+        </header>
+
+
+      <%= yield %>
+    <!-- </div> -->
 
     <footer>
-    <p>© 2016 Marina Rozova</p>
+      <p>© 2016 Marina Rozova</p>
     </footer>
-</body>
+  </body>
 </html>
+
+
 <script src="/js/jquery.js" type="text/javascript"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
 <script src="/js/script.js" type="text/javascript"></script>

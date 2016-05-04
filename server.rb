@@ -6,11 +6,15 @@ module Sinatra
     end
 
     get "/about" do
-        erb :about
+      erb :about
+    end
+
+    get "/resume" do
+      erb :resume
     end
 
     get "/contact" do
-        erb :contact
+      erb :contact
     end
 
   end
