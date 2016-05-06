@@ -1,0 +1,33 @@
+    <div class="container">
+
+    <br>
+    <br>
+      <form class="form_signin" method="post" action=<%="/projects/#{@project["id"]}/edit"%>>
+      <input type="hidden" name="_method" value="put">
+        <h2 class="form-signin-heading">Update project</h2>
+
+        <div class="input"><textarea name="name" class="form-control" required autofocus> <%= @project["name"] %> </textarea></div>
+
+        <div class="input"><textarea name="image" class="form-control" required autofocus> <%= @project["image"] %> </textarea></div>
+
+        <div class="input"><textarea name="description" class="form-control" required autofocus> <%= @project["description"] %> </textarea></div>
+
+        <button class="btn my-btn" type="submit">Submit</button>
+
+
+      </form>
+      <br>
+
+
+        <form class="form_signin new_article" id="edit" method="post" action=<%="/projects/#{@project["id"]}/edit"%>>
+            <input type="hidden" name="_method" value="delete">
+            <button class="btn my-btn" id="delete" type="submit">Delete project</button>
+        </form> 
+
+        
+
+
+        
+
+
+    </div> 

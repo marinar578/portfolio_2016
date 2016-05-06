@@ -1,0 +1,8 @@
+<%= @project %>
+
+<%=@content%>
+
+<br/><br/>
+<% if current_user == "Marina" %>
+    <a href=<%="/projects/#{@project["id"]}/edit"%>>Edit project</a>
+<% end %>
