@@ -46,8 +46,29 @@ header .head-container .logo h1 {
     position: relative;
     top: 30px;
     color: #0F137E;
+    /*animation: fadein 5s;*/
 }
 
+header .head-container .logo#index-logo h1 {
+    animation: fadein 5s;
+}
+
+header .head-container .logo #logo-desc {
+    position: relative;
+    top: 30px;
+    font-size: 15px;
+    color: #0F137E;
+    text-align: center;
+}
+
+header .head-container .logo#index-logo #logo-desc {
+    animation: fadein 8s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
 
 header .head-container .navigation {
     position: relative;
@@ -75,6 +96,10 @@ header .head-container .navigation ul li a:hover {
     font-weight: 400;
 }
 
+div.main-container{
+    display: none;
+}
+
 .project {
     height: 200px;
     width: 200px;
@@ -92,12 +117,8 @@ header .head-container .navigation ul li a:hover {
 }
 
 @keyframes opacity-delay {
-    0%{
-        opacity: 1;
-    }
-    100%{
-        opacity: .7;
-    }
+    0%  {   opacity: 1;     }
+    100%{   opacity: .7;    }
 }
 
 
@@ -135,39 +156,39 @@ header .head-container .navigation ul li a:hover {
 }
 
 footer {
-    height: 100px;
-    text-align: right;
-}
-
-footer div {
     position: relative;
-    top: 50%;
+    top: 100px;
+    text-align: right;
+
 }
 
 footer div.social-icons{
-    height: 20px;
-    /*background-color: red;*/
+    position: relative;
+    top: 20px;
+    text-align: ce/*n*/ter;
 }
 
 footer div.social-icons .social-icon{
-    height: 20px;
-    width: 32px;
     height: 32px;
+    width: 32px;
     display: inline-block;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
 
-#icon-twitter{
+footer div.social-icons .social-icon#icon-twitter{
     background-image: url(/images/icon-twitter.png);
 }
 
-#icon-github{
-    background-image: url(/images/icon-twitter.png);
+footer div.social-icons .social-icon#icon-github{
+    background-image: url(/images/icon-github.png);
 }
 
-#icon-linkedin{
-    background-image: url(/images/icon-twitter.png);
+footer div.social-icons .social-icon#icon-linkedin{
+    background-image: url(/images/icon-linkedin.png);
 }
 
-#icon-mail{
-    background-image: url(/images/icon-twitter.png);
+footer div.social-icons .social-icon#icon-mail{
+    background-image: url(/images/icon-mail.png);
 }

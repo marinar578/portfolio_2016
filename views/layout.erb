@@ -17,11 +17,11 @@
             </div>
 
             <div class="head-container col-md-6">
-              <div class="logo">
+              <div class="logo" <% if @index %> id="index-logo"<%end%> >
                 <h1><strong>marina<br/><br/>rozova</strong></h1>
-                <!-- <div id="logo-desc">
-                <strong>Full Stack Web Developer</strong>
-                </div> -->
+                <div id="logo-desc"><strong>
+                Full Stack Web Developer</strong>
+                </div>
               </div>
 
               <div class="navigation">
@@ -50,9 +50,9 @@
 
         </header>
 
-
+        <div class="main-container">
       <%= yield %>
-    <!-- </div> -->
+      </div>
 
     <footer>
       <div class="row" id="header-row">
@@ -62,10 +62,10 @@
         <div class="col-md-6">
           <div>© 2016 Marina Rozova</div>
           <div class="social-icons">
-            <div class="social-icon" id="icon-twitter"></div>
-            <div class="social-icon" id="icon-github"></div>
-            <div class="social-icon" id="icon-linkedin"></div>
-            <div class="social-icon" id="icon-mail"></div>
+            <a href="https://twitter.com/marina_rozova" target="blank"><div class="social-icon" id="icon-twitter"></div></a>
+            <a href="https://github.com/marinar578" target="blank"><div class="social-icon" id="icon-github"></div></a>
+            <a href="https://www.linkedin.com/in/rozovamarina" target="blank"><div class="social-icon" id="icon-linkedin"></div></a>
+            <a href="mailto:marinar578@gmail.com"><div class="social-icon" id="icon-mail"></div></a>
           </div>
         </div>
 

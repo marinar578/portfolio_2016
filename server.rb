@@ -39,6 +39,7 @@ class Server < Sinatra::Base
 # -------------------------------------
 
   get "/" do
+    @index = true
     erb :index
   end
 
