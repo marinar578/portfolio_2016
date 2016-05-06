@@ -42,7 +42,7 @@ header .head-container .logo {
     border: solid #FACD01 10px;
 }
 
-header .head-container .logo strong {
+header .head-container .logo h1 {
     position: relative;
     top: 30px;
     color: #0F137E;
@@ -83,18 +83,14 @@ header .head-container .navigation ul li a:hover {
     display: inline-block;
     margin: 5px;
     font-weight: 300;
-    /*transition: 0s opacity;*/
 }
 
 .project:hover{
     opacity: .7;
     cursor: pointer;
-    /*transition-delay: .2s;*/
     animation: opacity-delay .4s linear 0s; 
 }
 
-
-/* blinks at the end, find out why and fix */
 @keyframes opacity-delay {
     0%{
         opacity: 1;
@@ -140,10 +136,38 @@ header .head-container .navigation ul li a:hover {
 
 footer {
     height: 100px;
-    text-align: center;
+    text-align: right;
 }
 
-footer p {
+footer div {
     position: relative;
     top: 50%;
+}
+
+footer div.social-icons{
+    height: 20px;
+    /*background-color: red;*/
+}
+
+footer div.social-icons .social-icon{
+    height: 20px;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+}
+
+#icon-twitter{
+    background-image: url(/images/icon-twitter.png);
+}
+
+#icon-github{
+    background-image: url(/images/icon-twitter.png);
+}
+
+#icon-linkedin{
+    background-image: url(/images/icon-twitter.png);
+}
+
+#icon-mail{
+    background-image: url(/images/icon-twitter.png);
 }
