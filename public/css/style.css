@@ -39,14 +39,13 @@ header .head-container .logo {
     width: 275px;
     margin-left: 30%;
 
-    border: solid #FACD01 10px;
+    /*border: solid #FACD01 10px;*/
 }
 
 header .head-container .logo h1 {
     position: relative;
     top: 30px;
     color: #0F137E;
-    /*animation: fadein 5s;*/
 }
 
 #index-logo .logo, #index-logo .logo h1, #index-logo .logo #logo-desc, #index-logo .navigation {
@@ -97,7 +96,15 @@ div.main-container{
     display: none;
 }
 
-.project {
+a:hover {
+    text-decoration: none;
+}
+
+a .project { 
+    text-decoration: none;
+}
+
+a .project {
     height: 200px;
     width: 200px;
     color: white;
@@ -106,20 +113,19 @@ div.main-container{
     margin: 5px;
     font-weight: 300;
     display: none;
-
 }
 
-.project:hover{
+a .project:hover{
     opacity: .7;
     cursor: pointer;
-    animation: opacity-delay .4s linear 0s; 
+    text-decoration: none;
+    animation: opacity-delay .2s linear 0s; 
 }
 
 @keyframes opacity-delay {
     0%  {   opacity: 1;     }
     100%{   opacity: .7;    }
 }
-
 
 .text {
     position: relative;
@@ -153,6 +159,22 @@ div.main-container{
     background-color: #FCDA00;
     color: #0F137E;
 }
+
+
+/* Individual project page */
+.project-wrapper{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.project-wrapper img {
+    width: 600px;
+}
+
+
+/* end of individual project page css*/
+
+
 
 footer {
     position: relative;

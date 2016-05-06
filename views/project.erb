@@ -1,8 +1,26 @@
-<%= @project %>
+<div class="project-wrapper">
 
-<%=@content%>
+    <h2><%= @project["name"] %></h2>
 
-<br/><br/>
-<% if current_user == "Marina" %>
-    <a href=<%="/projects/#{@project["id"]}/edit"%>>Edit project</a>
-<% end %>
+
+    <div class="btn-group btn-group-justified" role="group" aria-label="...">
+      <div class="btn-group" role="group">
+        <a href=<%= @project["link"] %> target="blank"><button type="button" class="btn btn-default">See project</button></a>
+      </div>
+ 
+      <div class="btn-group" role="group">
+        <a href=<%= @project["github_link"] %> target="blank"><button type="button" class="btn btn-default">Github</button></a>
+      </div>
+    </div>
+
+
+    <img src=<%= @project["image"] %>/>
+
+    <%=@content%>
+
+    <br/><br/>
+    <% if current_user == "Marina" %>
+        <a href=<%="/projects/#{@project["id"]}/edit"%>>Edit project</a>
+    <% end %>
+
+</div>

@@ -17,54 +17,68 @@ conn.exec("CREATE TABLE projects(
     id SERIAL PRIMARY KEY,
     name VARCHAR(255),
     image VARCHAR(255),
-    description VARCHAR(255)
+    description VARCHAR(255),
+    link VARCHAR,
+    github_link VARCHAR
   )"
 )
 
 # Blackjack
-conn.exec("INSERT INTO projects (name, image, description) VALUES (
+conn.exec("INSERT INTO projects (name, image, description, link, github_link) VALUES (
     'Blackjack',
     '/images/ga_blackjack_screenshot.png',
-    'BlackJack game built with HTML5, CSS, and JavaScript.'
+    'BlackJack game built with HTML5, CSS, and JavaScript.',
+    'https://marinar578.github.io/',
+    'https://github.com/marinar578/marinar578.github.io'
   )"
 )
 
 # wecreate
-conn.exec("INSERT INTO projects (name, image, description) VALUES (
+conn.exec("INSERT INTO projects (name, image, description, link, github_link) VALUES (
     'wecreate',
     '/images/ga_wecreate_screenshot.png',
-    'Wiki-type application where users can view, add, and edit creative works. Built with HTML, CSS, JavaScript, Sinatra, and PostgreSQL.'
+    'Wiki-type application where users can view, add, and edit creative works. Built with HTML, CSS, JavaScript, Sinatra, and PostgreSQL.',
+    'https://ga-project2.herokuapp.com/',
+    'https://github.com/marinar578/ga-project2'
   )"
 )
 
 # Era
-conn.exec("INSERT INTO projects (name, image, description) VALUES (
+conn.exec("INSERT INTO projects (name, image, description, link, github_link) VALUES (
     'Era',
     '/images/ga_era_screenshot.png',
-    'Book recommendations app built with HTML5, CSS, Material Design, JavaScript, and Rails. It calls the Google Books and Google Places APIs.'
+    'Book recommendations app built with HTML5, CSS, Material Design, JavaScript, and Rails. It calls the Google Books and Google Places APIs.',
+    'https://yournewbooks.herokuapp.com/',
+    'https://github.com/marinar578/your_book'  
   )"
 )
 
 # Innovation Cloud
-conn.exec("INSERT INTO projects (name, image, description) VALUES (
+conn.exec("INSERT INTO projects (name, image, description, link, github_link) VALUES (
     'Innovation Cloud',
-    'https://36.media.tumblr.com/9dab05c01743a5d960f5c857a96f5bc3/tumblr_nqghz9YmMx1tqrkono1_1280.png',
-    ''
+    '/images/ca_innovation_screenshot.png',
+    '',
+    'https://young-tor-6274.herokuapp.com/',
+    'https://github.com/marinar578/innovation-cloud'  
   )"
 )
 
 # Newstand
-conn.exec("INSERT INTO projects (name, image, description) VALUES (
+conn.exec("INSERT INTO projects (name, image, description, link, github_link) VALUES (
     'Newstand',
-    'https://41.media.tumblr.com/82345b653b7133db0122813c95a8efed/tumblr_nqghyv5TGk1tqrkono1_1280.png',
-    ''
+    '/images/ca_newstand_screenshot.png',
+    '',
+    'https://pure-tundra-5035.herokuapp.com/',
+    'https://github.com/marinar578/newstand1'  
   )"
 )
 
 # threadly
-conn.exec("INSERT INTO projects (name, image, description) VALUES (
+conn.exec("INSERT INTO projects (name, image, description, link, github_link) VALUES (
     'threadly',
-    'https://40.media.tumblr.com/97661035a17a6de379e4541e20f3f024/tumblr_nqmar3ZseP1tqrkono1_1280.png',
-    ''
+    '/images/ca_threadly_screenshot.png',
+    '',
+    'https://secret-peak-8161.herokuapp.com/',
+    'https://github.com/marinar578/threadly'  
   )"
 )
