@@ -209,14 +209,43 @@ a .project:hover{
 /* end of individual project page*/
 
 
+/* ------------------------ */
+/* About page */
+/* ------------------------ */
+.about-wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.about-wrapper h2 {
+  /*text-align: center;*/
+  font-size: 20px;
+  padding: 15px;
+}
+
+.about-wrapper p {
+  /*font-family: Arial, sans-serif;*/
+  font-size: 16px;
+  font-weight: 400;
+  padding: 15px;
+}
+
+.about-content {
+  margin: 0 auto;
+  
+}
+
+.about-content img {
+  width: 500px;
+}
+
 
 
 /* ------------------------ */
 /* Contact page */
 /* ------------------------ */
-.contact-content {
+.contact-wrapper {
     text-align: center;
-    /*font-weight: 300;*/
 }
 
 form.contact {
@@ -224,7 +253,6 @@ form.contact {
   background: #ecf0f1;
   padding: 20px;
   margin: 0 auto;
-  /*font-weight: 300;*/
 }
 
 form.contact div.input-row {
