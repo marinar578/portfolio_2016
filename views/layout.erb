@@ -8,51 +8,53 @@
     <link href="/css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
+    <header>
+      <div class="row" id="header-row">
+        <div class="col-md-3">
+        </div>
 
-        <header>
-
-          <div class="row" id="header-row">
-
-            <div class="col-md-3">
+        <div class="head-container col-md-6" <% if @index %> id="index-logo"<%end%>>
+          <div class="logo">
+            <h1><strong>marina<br/><br/>rozova</strong></h1>
+            <div id="logo-desc"><strong>
+            Full Stack Web Developer</strong>
             </div>
-
-            <div class="head-container col-md-6" <% if @index %> id="index-logo"<%end%>>
-              <div class="logo">
-                <h1><strong>marina<br/><br/>rozova</strong></h1>
-                <div id="logo-desc"><strong>
-                Full Stack Web Developer</strong>
-                </div>
-              </div>
-
-              <div class="navigation">
-                <ul class="row">
-                  <li class="col-md-3">
-                    <a href="/">work</a>
-                  </li>
-                  <li class="col-md-3">
-                    <a href="/about">about</a>
-                  </li>
-                  <li class="col-md-3">
-                    <a href="/resume">resumé</a>
-                  </li>
-                  <li class="col-md-3">
-                    <a href="/contact">contact</a>
-                  </li>
-                </ul>
-              </div>
-
-            </div>
-
-            <div class="col-md-3">
-            </div>
-
           </div>
 
-        </header>
+          <div class="navigation">
+            <ul class="row">
+              <li class="col-md-3">
+                <a href="/">work</a>
+                <ul class="sub_main_navigation">
+                  <li><a href="/projects/1">Blackjack</a></li>
+                  <li><a href="/projects/2">wecreate</a></li>
+                  <li><a href="/projects/3">Era</a></li>
+                  <li><a href="/projects/4">Innovation Cloud</a></li>
+                  <li><a href="/projects/5">Newstand</a></li>
+                  <li><a href="/projects/6">threadly</a></li>
+                </ul>
+              </li>
+              <li class="col-md-3">
+                <a href="/about">about</a>
+              </li>
+              <li class="col-md-3">
+                <a href="/resume">resumé</a>
+              </li>
+              <li class="col-md-3">
+                <a href="/contact">contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-        <div class="main-container">
-      <%= yield %>
+        <div class="col-md-3">
+        </div>
       </div>
+    </header>
+
+    <div class="main-container">
+      <%= yield %>
+    </div>
 
     <footer>
       <div class="row" id="header-row">
@@ -75,7 +77,6 @@
     </footer>
   </body>
 </html>
-
 
 <script src="/js/jquery.js" type="text/javascript"></script>
 
