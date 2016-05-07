@@ -84,6 +84,18 @@ class Server < Sinatra::Base
     erb :contact
   end
 
+  post "/contact" do
+      name = params["name"]
+      email = params["email"]
+      message = params["message"]
+
+      db.exec_params("INSERT INTO contact_info (name, email, message) VALUES ($1, $2, $3)", [name, email, message])
+
+      @contact_submitted = true
+
+      erb :contact
+  end
+
 
   get "/admin" do
     erb :admin

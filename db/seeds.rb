@@ -23,6 +23,14 @@ conn.exec("CREATE TABLE projects(
   )"
 )
 
+conn.exec("CREATE TABLE contact_info(
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255),
+    email VARCHAR(255),
+    message TEXT
+  )"
+)
+
 # Blackjack
 conn.exec("INSERT INTO projects (name, image, description, link, github_link) VALUES (
     'Blackjack',
