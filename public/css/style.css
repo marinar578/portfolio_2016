@@ -73,28 +73,27 @@ header .head-container .navigation {
 
 header .head-container .navigation ul {
     list-style: none;
+    /*z-index: 2;*/
 }
 
 header .head-container .navigation ul li {
     display: inline;
     text-align: center;
+    z-index: 2;
+
 }
 
 header .head-container .navigation ul li a {
     color: #777;
     text-decoration: none;
+    z-index: 2;
+
 }
 
 header .head-container .navigation ul li a:hover {
     color: #000;
     font-weight: 400;
 }
-
-/*header .head-container .navigation ul li .sub_main_navigation li{
-    display: none;
-    z-index: 2;
-    text-align: left;
-}*/
 
 div.main-container{
     opacity: 0;
@@ -209,6 +208,7 @@ a .project:hover{
 /* end of individual project page*/
 
 
+
 /* ------------------------ */
 /* About page */
 /* ------------------------ */
@@ -297,6 +297,21 @@ form.contact div.input-row input[type=submit] {
   color: #0F137E;
 }
 /* end of contact page */
+
+
+/* ------------------------ */
+/* Resume page */
+/* ------------------------ */
+.resume-wrapper img{
+  position: relative;
+  top: -50px;
+  width: 70%;
+  margin-left: 15%;
+  z-index: -1;
+}
+
+/* end of resume page */
+
 
 
 
