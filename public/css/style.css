@@ -304,10 +304,13 @@ form.contact div.input-row input[type=submit] {
 /* ------------------------ */
 .resume-wrapper img{
   position: relative;
-  top: -50px;
+  /*top: -50px;*/
   width: 70%;
   margin-left: 15%;
   z-index: -1;
+  border: 1px solid black;
+  /*border-top: 1px solid black;*/
+
 }
 
 /* end of resume page */
