@@ -9,8 +9,8 @@
     $('#index-logo .navigation').delay(1000).fadeTo('slow', 1);
 
     $('.main-container').delay(200).fadeTo('slow', 1);
-    for(var i = 1; i < 7; i++){
-        $('#project-' + i).delay(200).fadeTo('slow', 1);
-    }
+    // for(var i = 1; i < 7; i++){
+    //     $('#project-' + i).delay(200).fadeTo('slow', 1);
+    // }
 
 })();
