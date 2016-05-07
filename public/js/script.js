@@ -1,15 +1,19 @@
 "use strict";
 (function(){
 
-    $('#index-logo .logo').fadeIn('fast');
-    $('#index-logo .logo h1').delay(200).slideDown('slow');
-    $('#index-logo .logo #logo-desc').delay(1000).fadeIn('slow');
+    // $('#index-logo .logo').fadeIn('fast');
 
-    $('#index-logo .navigation').slideDown('slow');
+    $('#index-logo .logo h1').delay(200).fadeTo('slow', 1);
 
-    $('.main-container').fadeIn('slow');
+    $('#index-logo .logo #logo-desc').delay(700).fadeTo('slow', 1);
+
+    $('#index-logo .navigation').delay(1000).fadeTo('slow', 1);
+
+
+    // $('.main-container').fadeIn('slow');
     for(var i = 1; i < 7; i++){
-        $('#project-' + i).delay(200 + (i * 100)).fadeIn('slow');
+        $('#project-' + i).delay(200).fadeTo('slow', 1);
+
     }
 
 

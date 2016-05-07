@@ -48,9 +48,6 @@ header .head-container .logo h1 {
     color: #0F137E;
 }
 
-#index-logo .logo, #index-logo .logo h1, #index-logo .logo #logo-desc, #index-logo .navigation {
-    display: none;
-}
 
 header .head-container .logo #logo-desc {
     position: relative;
@@ -58,6 +55,13 @@ header .head-container .logo #logo-desc {
     font-size: 15px;
     color: #0F137E;
     text-align: center;
+}
+
+#header-row #index-logo .logo h1, 
+#header-row #index-logo .logo #logo-desc,
+#index-logo .navigation  
+{
+    opacity: 0;
 }
 
 
@@ -92,9 +96,9 @@ header .head-container .navigation ul li a:hover {
     font-weight: 400;
 }
 
-div.main-container{
+/*div.main-container{
     display: none;
-}
+}*/
 
 a:hover {
     text-decoration: none;
@@ -112,7 +116,7 @@ a .project {
     display: inline-block;
     margin: 5px;
     font-weight: 300;
-    display: none;
+    opacity: 0;
 }
 
 a .project:hover{
