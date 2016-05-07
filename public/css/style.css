@@ -230,13 +230,15 @@ a .project:hover{
   padding: 15px;
 }
 
-.about-content {
+.about-wrapper .fav-photos {
+  width: 100%;
   margin: 0 auto;
-  
 }
 
-.about-content img {
-  width: 500px;
+.about-wrapper .fav-photos img {
+  /*width: 200px;*/
+  height: 200px;
+  padding: 10px 20px;
 }
 
 
