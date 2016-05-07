@@ -165,8 +165,11 @@ a .project:hover{
 }
 
 
-/* Individual project page */
 
+
+/* ------------------------ */
+/* Individual project page */
+/* ------------------------ */
 .project-wrapper h2 {
     text-align: center;
 }
@@ -203,9 +206,67 @@ a .project:hover{
 .project-wrapper .content {
     text-align: center;
 }
+/* end of individual project page*/
 
 
-/* end of individual project page css*/
+
+
+/* ------------------------ */
+/* Contact page */
+/* ------------------------ */
+.contact-content {
+    text-align: center;
+    /*font-weight: 300;*/
+}
+
+form.contact {
+  width: 600px;
+  background: #ecf0f1;
+  padding: 20px;
+  margin: 0 auto;
+  /*font-weight: 300;*/
+}
+
+form.contact div.input-row {
+  padding: 6px;
+}
+
+form.contact div.input-row label {
+  vertical-align: top;
+  font-size: 22px;
+  display: inline-block;
+  width: 120px;
+  font-weight: 400;
+}
+
+form.contact div.input-row input[type=text]{
+  font-size: 15px;
+  width: 440px;
+  height: 30px;
+  padding: 6px;
+  border: 1px solid #bbb;
+  font-family: Arial, sans-serif;
+}
+
+form.contact div.input-row textarea {
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+  padding: 6px;
+  width: 440px;
+  height: 200px;
+  border: 1px solid #bbb;
+}
+
+form.contact div.input-row input[type=submit] {
+  font-size: 22px;
+  border: 1px solid #bbb;
+  margin-left: 126px;
+  background: #FDDD51;
+  padding: 6px 20px;
+  cursor: pointer;
+  color: #0F137E;
+}
+/* end of contact page */
 
 
 
@@ -219,7 +280,6 @@ footer {
 footer div.social-icons{
     position: relative;
     top: 20px;
-    text-align: ce/*n*/ter;
 }
 
 footer div.social-icons .social-icon{
