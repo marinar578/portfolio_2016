@@ -14,13 +14,14 @@
     }
 
     /* Menu */
-      var menu = $('.navigation li');
-      menu.hover(function(){
-        $(this).children('ul').show();
-        $('.main-container').fadeTo('fast', .5)
-      }, function(){
-        $(this).children('ul').hide();
-      });
+      // var menu = $('.navigation li');
+      // menu.hover(function(){
+      //   $(this).children('ul').show();
+      //   $('.main-container').fadeTo('fast', .5)
+      // }, function(){
+      //   $(this).children('ul').hide();
+      //   $('.main-container').fadeTo('fast', 1)
+      // });
 
 
 

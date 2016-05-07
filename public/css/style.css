@@ -90,11 +90,11 @@ header .head-container .navigation ul li a:hover {
     font-weight: 400;
 }
 
-header .head-container .navigation ul li .sub_main_navigation{
+/*header .head-container .navigation ul li .sub_main_navigation li{
     display: none;
     z-index: 2;
     text-align: left;
-}
+}*/
 
 div.main-container{
     opacity: 0;
@@ -166,8 +166,28 @@ a .project:hover{
 
 
 /* Individual project page */
+
+.project-wrapper h2 {
+    text-align: center;
+}
+
 .btn-group, .btn-group-justified, .link-buttons {
-    z-index: -1;
+    /*z-index: -1;*/
+}
+
+.btn-group {
+    width: 280px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.link-buttons {
+    background-color: #555;
+    color: white;
+}
+.link-buttons:hover {
+    background-color: black;
+    color: white;
 }
 
 .project-wrapper{
@@ -176,7 +196,12 @@ a .project:hover{
 }
 
 .project-wrapper img {
-    width: 600px;
+    padding: 50px 200px;
+    width: 1000px;
+}
+
+.project-wrapper .content {
+    text-align: center;
 }
 
 
