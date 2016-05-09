@@ -114,10 +114,9 @@ class Server < Sinatra::Base
     # binding.pry
     if BCrypt::Password.new(@user["password_digest"]) == params[:password]
       session["user_id"] = @user["id"]
-      redirect "/"
+      redirect "/admin/contact"
     else
-      @error = "Invalid Password"
-      erb :admin
+      redirect "/admin"
     end
   end
 

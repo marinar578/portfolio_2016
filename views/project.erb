@@ -15,6 +15,12 @@
       </div>
     </div>
 
+<!-- edit link for admin use: -->
+    <% if current_user == "Marina" %>
+      <br/><br/>
+        <a href=<%="/projects/#{@project["id"]}/edit"%>>Edit project</a>
+    <% end %>
+<!--  -->
 
     <ul class="projects-list">
     <h4 style="text-align: center">Other Projects:</h4>
@@ -30,10 +36,5 @@
       <% end %>
       <% end %>
     </ul>
-
-    <br/><br/>
-    <% if current_user == "Marina" %>
-        <a href=<%="/projects/#{@project["id"]}/edit"%>>Edit project</a>
-    <% end %>
 
 </div>
