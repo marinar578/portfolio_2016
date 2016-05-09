@@ -110,7 +110,6 @@ a .project {
     display: inline-block;
     margin: 5px;
     font-weight: 300;
-    /*opacity: 0;*/
 }
 
 a .project:hover{
@@ -235,6 +234,12 @@ ul.projects-list .project-even a {
   color: #0F137E;
 }
 
+ul.projects-list li:hover{
+    opacity: .7;
+    cursor: pointer;
+    text-decoration: none;
+    animation: opacity-delay .2s linear 0s; 
+}
 
 /* end of individual project page*/
 
