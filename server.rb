@@ -43,6 +43,10 @@ class Server < Sinatra::Base
     erb :index
   end
 
+  get "/projects" do
+    erb :index
+  end
+
   get "/projects/:id" do
     @project = db.exec_params("SELECT * FROM projects WHERE id = $1", [params[:id]]).first
     
