@@ -15,6 +15,20 @@
       </div>
     </div>
 
+    <ul class="projects-list">
+      <% @projects.each do |project| %>
+
+      <% if project["id"] != @project["id"] %>
+
+
+        <li class=<% if project["id"].to_i.odd? %>"project-odd"<% else %>"project-even"<% end %>>
+          <a href=<%="/projects/#{project['id']}"%>><%=project["name"]%></a>
+        </li>
+
+      <% end %>
+      <% end %>
+    </ul>
+
     <br/><br/>
     <% if current_user == "Marina" %>
         <a href=<%="/projects/#{@project["id"]}/edit"%>>Edit project</a>

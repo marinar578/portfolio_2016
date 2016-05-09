@@ -48,6 +48,7 @@ class Server < Sinatra::Base
   end
 
   get "/projects/:id" do
+    @projects = db.exec_params("SELECT * FROM projects").to_a
     @project = db.exec_params("SELECT * FROM projects WHERE id = $1", [params[:id]]).first
     
     renderer = Redcarpet::Render::HTML

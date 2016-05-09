@@ -131,29 +131,29 @@ a .project:hover{
     font-size: 25px;
 }
 
-.project#project-1 {
+.inner-wrapper .project-1 {
     background-color: #0F137E;
 }
 
-.project#project-2 {
+.inner-wrapper .project-2 {
     background-color: #FACD01;
     color: #0F137E;
 }
 
-.project#project-3 {
+.inner-wrapper .project-3 {
     background-color: #0F137E;
 }
 
-.project#project-4 {
+.inner-wrapper .project-4 {
     background-color: #FDDD51;
     color: #0F137E;
 }
 
-.project#project-5 {
+.inner-wrapper .project-5 {
     background-color: #0F137E;
 }
 
-.project#project-6 {
+.inner-wrapper .project-6 {
     background-color: #FCDA00;
     color: #0F137E;
 }
@@ -196,6 +196,46 @@ a .project:hover{
 .project-wrapper .content {
     text-align: center;
 }
+
+ul.projects-list {
+  position: relative;
+  top: 100px;
+  display: inline-block;
+}
+
+ul.projects-list li {
+  list-style: none;
+  padding: 5px;
+  display: inline-block;
+  width: 175px;
+  margin: 5px;
+  text-align: center;
+  font-size: 15px;
+}
+
+ul.projects-list .project-odd {
+  background-color: #0F137E;
+}
+
+ul.projects-list .project-even {
+  background-color: #FACD01;
+  color: #0F137E;
+}
+
+ul.projects-list a {
+  text-decoration: none;
+  padding: 10px;
+}
+
+ul.projects-list .project-odd a {
+  color: white;
+}
+
+ul.projects-list .project-even a {
+  color: #0F137E;
+}
+
+
 /* end of individual project page*/
 
 
@@ -215,7 +255,6 @@ a .project:hover{
 }
 
 .about-wrapper p {
-  /*font-family: Arial, sans-serif;*/
   font-size: 16px;
   font-weight: 400;
   padding: 15px;
@@ -227,7 +266,6 @@ a .project:hover{
 }
 
 .about-wrapper .fav-photos img {
-  /*width: 200px;*/
   height: 200px;
   padding: 10px 20px;
 }
