@@ -63,7 +63,7 @@ class Server < Sinatra::Base
     if current_user == "Marina"
       erb :update_project
     else
-      redirect "/"
+      redirect "/admin"
     end
   end
 
@@ -102,6 +102,9 @@ class Server < Sinatra::Base
   end
 
 
+# -------------------------------------
+# admin access:
+# -------------------------------------
   get "/admin" do
     erb :admin
   end
@@ -115,6 +118,15 @@ class Server < Sinatra::Base
     else
       @error = "Invalid Password"
       erb :admin
+    end
+  end
+
+  get "/admin/contact" do 
+    @contacts = db.exec_params("SELECT * FROM contact_info").to_a
+    if current_user == "Marina"
+      erb :contact_info
+    else
+      redirect "/admin"
     end
   end
 

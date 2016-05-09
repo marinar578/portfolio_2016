@@ -346,6 +346,29 @@ form.contact div.input-row input[type=submit] {
 
 
 
+/* ------------------------ */
+/* Admin contact info page */
+/* ------------------------ */
+.contact-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-wrapper .header-row {
+  text-align: left;
+  font-weight: bold;
+}
+
+.contact-wrapper .data-row {
+  text-align: left;
+  border-top: 1px solid black;
+  font-size: 13px;
+  font-family: Arial;
+}
+/* end of contact info page */
+
+
 
 footer {
     position: relative;
@@ -383,3 +406,5 @@ footer div.social-icons .social-icon#icon-linkedin{
 footer div.social-icons .social-icon#icon-mail{
     background-image: url(/images/icon-mail.png);
 }
+
+

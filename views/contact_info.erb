@@ -1,0 +1,18 @@
+<div class="contact-wrapper">
+    <div class="row header-row">
+        <div class="col-md-1">ID</div>
+        <div class="col-md-3">Name</div>
+        <div class="col-md-3">Email</div>
+        <div class="col-md-5">Message</div>
+    </div>
+
+    <% @contacts.each do |contact| %>
+    <div class="row data-row">
+        <div class="col-md-1"><%= contact["id"] %></div>
+        <div class="col-md-3"><%= contact["name"] %></div>
+        <div class="col-md-3"><%= contact["email"] %></div>
+        <div class="col-md-5"><%= contact["message"] %></div>
+    </div>
+    <% end %>
+
+</div>
