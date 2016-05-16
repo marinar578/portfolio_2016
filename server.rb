@@ -1,6 +1,6 @@
 require "sinatra/base"
 # mailer
-require "sinatra_more"
+require "sinatra_more/mailer_plugin"
 require "./mailers/contact_mailer.rb"
 require "pony"
 
