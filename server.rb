@@ -1,4 +1,9 @@
 require "sinatra/base"
+# mailer
+require "sinatra_more"
+require "./mailers/contact_mailer.rb"
+require "pony"
+
 require "pg"
 require 'digest/md5'
 require "pry"
@@ -8,7 +13,13 @@ require "bcrypt"
 
 
 class Server < Sinatra::Base
+  # mailer:
+  register SinatraMore::MailerPlugin
+
+  # sessions:
   enable :sessions
+
+  # put and delete:
   set :method_override, true
 
 # -------------------------------------
@@ -98,6 +109,8 @@ class Server < Sinatra::Base
 
       @contact_submitted = true
 
+      ContactMailer.deliver(:contact_email, name, email, message)
+
       erb :contact
   end
 
@@ -111,7 +124,7 @@ class Server < Sinatra::Base
 
   post "/admin" do
     @user = db.exec_params("SELECT * FROM admin WHERE name = 'marinaroze'").first
-    # binding.pry
+
     if BCrypt::Password.new(@user["password_digest"]) == params[:password]
       session["user_id"] = @user["id"]
       redirect "/admin/contact"
