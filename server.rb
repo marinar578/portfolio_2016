@@ -1,8 +1,8 @@
 require "sinatra/base"
 # mailer
-require "sinatra_more/mailer_plugin"
-require "./mailers/contact_mailer.rb"
-require "pony"
+# require "sinatra_more/mailer_plugin"
+# require "./mailers/contact_mailer.rb"
+# require "pony"
 
 require "pg"
 require 'digest/md5'
@@ -14,7 +14,7 @@ require "bcrypt"
 
 class Server < Sinatra::Base
   # mailer:
-  register SinatraMore::MailerPlugin
+  # register SinatraMore::MailerPlugin
 
   # sessions:
   enable :sessions
@@ -109,7 +109,7 @@ class Server < Sinatra::Base
 
       @contact_submitted = true
 
-      ContactMailer.deliver(:contact_email, name, email, message)
+      # ContactMailer.deliver(:contact_email, name, email, message)
 
       erb :contact
   end
