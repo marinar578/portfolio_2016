@@ -445,6 +445,12 @@ footer div.social-icons .social-icon#icon-mail{
 
     .project-wrapper img{
       padding: 0;
+      height: 150px;
+      width: 75%;
+      margin-left: 15%;
+      margin-top: 40px;
+      margin-bottom: 40px;
+
     }
 
     header .head-container{
