@@ -165,36 +165,37 @@ a .project:hover{
 /* Individual project page */
 /* ------------------------ */
 .project-wrapper h2 {
-    text-align: center;
+  text-align: center;
+  margin: 0;
 }
 
 .btn-group {
-    width: 280px;
-    height: 100px;
-    margin: 0 auto;
+  width: 280px;
+  height: 100px;
+  margin: 0 auto;
 }
 
 .link-buttons {
-    background-color: #555;
-    color: white;
+  background-color: #555;
+  color: white;
 }
 .link-buttons:hover {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
 .project-wrapper{
-    width: 80%;
-    margin-left: 10%;
+  width: 80%;
+  margin-left: 10%;
 }
 
 .project-wrapper img {
-    padding: 50px 200px;
-    width: 1000px;
+  padding: 50px 200px;
+  width: 1000px;
 }
 
 .project-wrapper .content {
-    text-align: center;
+  text-align: center;
 }
 
 ul.projects-list {
@@ -236,10 +237,10 @@ ul.projects-list .project-even a {
 }
 
 ul.projects-list li:hover{
-    opacity: .7;
-    cursor: pointer;
-    text-decoration: none;
-    animation: opacity-delay .2s linear 0s; 
+  opacity: .7;
+  cursor: pointer;
+  text-decoration: none;
+  animation: opacity-delay .2s linear 0s; 
 }
 
 /* end of individual project page*/
@@ -440,6 +441,10 @@ footer div.social-icons .social-icon#icon-mail{
 
     header {
       height: 250px;
+    }
+
+    .project-wrapper img{
+      padding: 0;
     }
 
     header .head-container{
