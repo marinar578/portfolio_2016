@@ -435,7 +435,8 @@ footer div.social-icons .social-icon#icon-mail{
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
+
     header {
       height: 250px;
     }
@@ -469,6 +470,5 @@ footer div.social-icons .social-icon#icon-mail{
 
     footer {
       text-align: center;
-
     }
 }
