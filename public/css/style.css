@@ -160,8 +160,6 @@ a .project:hover{
 }
 
 
-
-
 /* ------------------------ */
 /* Individual project page */
 /* ------------------------ */
@@ -410,3 +408,67 @@ footer div.social-icons .social-icon#icon-mail{
 }
 
 
+
+
+@media (max-width: 995px) {
+    a .project {
+      width: 80%;
+      height: 100px;
+      margin-left: 10%;
+    }
+
+    header .head-container{
+      margin-left: 27%;
+      width: 50%;
+    }
+
+    header .head-container .logo{
+      margin: 0 auto;
+    }
+
+    header .head-container .navigation{
+      margin: 0 auto;
+    }
+
+    header .head-container .navigation li{
+      padding: 2%;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+      height: 250px;
+    }
+
+    header .head-container{
+      margin: 0 auto;
+    }
+
+    header .head-container .logo{
+      line-height: 1em;
+      margin: 0 auto;
+      height: 150px;
+      width: 320px;
+    }
+
+
+    header .head-container .logo h1{
+      margin: 0 auto;
+      font-size: 20px;
+      line-height: 1em;
+    }
+
+    header .head-container .navigation{
+      margin: 0 auto;
+      width: 320px;
+    }
+
+    header .head-container .navigation li{
+      padding: 2%;
+    }
+
+    footer {
+      text-align: center;
+
+    }
+}
