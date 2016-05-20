@@ -8,6 +8,7 @@ body {
     font-style: normal;
     margin: 0 auto;
     max-width: 1290px;
+    overflow-x: hidden;
 }
 
 div.container {
@@ -442,7 +443,9 @@ footer div.social-icons .social-icon#icon-mail{
     }
 
     header .head-container{
-      margin: 0 auto;
+      width:100%;
+      margin-right: auto;
+      margin-left: auto;
     }
 
     header .head-container .logo{
