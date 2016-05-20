@@ -2,6 +2,10 @@
 (function(){
 
     /* Index effects */
+    $('#header-row #index-logo .logo h1').css('opacity', '0');
+    $('#header-row #index-logo .logo #logo-desc').css('opacity', '0');
+    $('#index-logo .navigation').css('opacity', '0');
+    $('.main-container').css('opacity', '0');
 
     // $('#index-logo .logo').fadeIn('fast');
     $('#index-logo .logo h1').delay(200).fadeTo('slow', 1);
