@@ -6,6 +6,8 @@ body {
     text-decoration: none;
     font-weight: 300, normal;
     font-style: normal;
+    margin: 0 auto;
+    max-width: 1290px;
 }
 
 div.container {
