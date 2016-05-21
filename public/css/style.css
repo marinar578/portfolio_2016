@@ -64,7 +64,7 @@ header .head-container .logo #logo-desc {
 #header-row #index-logo .logo #logo-desc,
 #index-logo .navigation  
 {
-    /*opacity: 0;*/
+    opacity: 0;
 }
 
 header .head-container .navigation {
@@ -94,7 +94,7 @@ header .head-container .navigation ul li a:hover {
 }
 
 div.main-container{
-    /*opacity: 0;*/
+    opacity: 0;
 }
 
 a:hover {
