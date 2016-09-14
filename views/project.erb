@@ -29,9 +29,9 @@
       <% if project["id"] != @project["id"] %>
 
 
-        <li class=<% if project["id"].to_i.odd? %>"project-odd"<% else %>"project-even"<% end %>>
-          <a href=<%="/projects/#{project['id']}"%>><%=project["name"]%></a>
-        </li>
+        <a href=<%="/projects/#{project['id']}"%>>
+          <li class=<% if project["id"].to_i.odd? %>"project-odd"<% else %>"project-even"<% end %>><%=project["name"]%></li>
+        </a>
 
       <% end %>
       <% end %>

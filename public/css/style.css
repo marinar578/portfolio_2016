@@ -216,6 +216,7 @@ ul.projects-list li {
 
 ul.projects-list .project-odd {
   background-color: #0F137E;
+  color: white;
 }
 
 ul.projects-list .project-even {
